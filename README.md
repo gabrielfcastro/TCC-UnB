@@ -11,8 +11,6 @@ em um cenário de classificação multiclasse. Como referência, o EFC e suas va
 são comparados ao **Random Forest** e ao **LightGBM** sob um protocolo estatístico de
 30 execuções independentes.
 
-📄 Monografia completa: ⚠️ [link para o PDF, se for disponibilizar]
-
 ---
 
 ## 📊 Dataset
