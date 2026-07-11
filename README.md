@@ -17,8 +17,8 @@ são comparados ao **Random Forest** e ao **LightGBM** sob um protocolo estatís
 
 ## 📊 Dataset
 
-Os experimentos utilizam o **⚠️ [CIC17]**, cujos fluxos
-foram agrupados em seis categorias: `Benign`, `DoS`, `DDoS`, `MQTT`, `Reconnaissance`
+Os experimentos utilizam o **CICIoT2023**, do Canadian Institute for
+Cybersecurity (CIC), cujos fluxos foram agrupados em seis categorias: `Benign`, `DoS`, `DDoS`, `MQTT`, `Reconnaissance`
 e `Spoofing`.
 
 Devido ao severo desbalanceamento do conjunto original (~7 milhões de amostras),
@@ -28,9 +28,8 @@ aplicou-se **subamostragem aleatória** limitada a 8.000 amostras por classe
 ## 📂 Estrutura do Repositório
 
 - **`data/`** — dados brutos e/ou já processados usados nos experimentos.
-- **`notebooks/`** — notebooks Jupyter na ordem de execução (ver abaixo).
-- **`tests/`** — bases geradas para validação (partições balanceadas e desbalanceadas).
-- **`docs/`** — diagramas (`.drawio`), esboços e slides da defesa.
+- **`notebooks/`** — notebooks Jupyter na ordem de execução.
+- **`docs/`** — monografia completa (PDF), slides da defesa e esboços dos diagramas com as ideias iniciais do TCC (`.drawio`).
 
 ---
 
@@ -63,7 +62,7 @@ distribuição do **Macro F1-Score**.
 
 ---
 
-## �「」Citação
+## 📌 Citação
 
 Se este trabalho for útil, cite:
 
