@@ -17,19 +17,13 @@ são comparados ao **Random Forest** e ao **LightGBM** sob um protocolo estatís
 
 ## 📊 Dataset
 
-Os experimentos utilizam o **⚠️ [nome do dataset — ex.: CICIoT2023]**, cujos fluxos
+Os experimentos utilizam o **⚠️ [CIC17]**, cujos fluxos
 foram agrupados em seis categorias: `Benign`, `DoS`, `DDoS`, `MQTT`, `Reconnaissance`
 e `Spoofing`.
 
 Devido ao severo desbalanceamento do conjunto original (~7 milhões de amostras),
 aplicou-se **subamostragem aleatória** limitada a 8.000 amostras por classe
 (48.000 no total). Os detalhes estão em `1_preprocessamento.ipynb`.
-
-> ⚠️ **Nota sobre os dados:** os arquivos brutos são grandes demais para o GitHub.
-> Descreva aqui se o repositório contém os dados já processados ou um link para
-> download dos dados brutos (Google Drive / Zenodo / site oficial do dataset).
-
----
 
 ## 📂 Estrutura do Repositório
 
@@ -65,21 +59,7 @@ distribuição do **Macro F1-Score**.
 
 ## 🚀 Requisitos e Execução
 
-Recomenda-se um ambiente virtual Python (⚠️ versão 3.x usada):
-
-```bash
-python -m venv venv
-source venv/bin/activate      # Linux/Mac
-venv\Scripts\activate         # Windows
-
-pip install -r requirements.txt
-jupyter notebook
-```
-
-⚠️ Gere o `requirements.txt` com `pip freeze > requirements.txt` no seu ambiente,
-para fixar as versões exatas usadas (essencial para reprodutibilidade). As
-principais dependências são: `pandas`, `numpy`, `scikit-learn`, `optuna`,
-`lightgbm` e `jupyter`, além da implementação base do EFC.
+**Recomendação principal:** Para maior praticidade e para evitar problemas de configuração de ambiente ou limitações de hardware, recomenda-se fortemente a execução dos *notebooks* diretamente no **Google Colab**. Basta fazer o upload dos arquivos `.ipynb` e da pasta de datasets para o seu Google Drive e abri-los na plataforma.
 
 ---
 
@@ -90,7 +70,3 @@ Se este trabalho for útil, cite:
 > CASTRO, Gabriel Francisco de Oliveira. *EFC para detecção multiclasse de ataques
 > em IoT: otimização, novas arquiteturas e análise comparativa.* Monografia
 > (Engenharia da Computação) — Universidade de Brasília, Brasília, 2026.
-
-## 📝 Licença
-
-⚠️ Adicione um arquivo LICENSE (ex.: MIT) se quiser permitir reuso.
